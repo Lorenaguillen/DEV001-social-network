@@ -1,0 +1,186 @@
+.contenedor_home {
+    width: 100%;
+    height: 100vh;
+    background: var(--fondo_home)
+}
+
+.contenedor_todo {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.logo {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url(../img/musica2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+.letraLogo {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    margin-top: 100px;
+
+    color: white;
+    display: inline-block;
+    font-size: 50px;
+    text-shadow: var(--sombra_botones);
+}
+
+
+.botonregistro {
+    cursor: pointer;
+    width: var(--ancho_botones);
+    height: var(--alto_botones);
+    font-size: var(--letra_texto_tamaño);
+    border: none;
+    border-radius: 10px;
+    background: var(--color_boton_registro);
+    color: #fae0e4;
+    box-shadow: var(--sombra_botones);
+    text-transform: uppercase;
+}
+
+.botonregistro:hover {
+    background: var(--color_boton_registro_hover);
+}
+
+.botoniniciosesion {
+    cursor: pointer;
+    width: var(--ancho_botones);
+    height: var(--alto_botones);
+    font-size: var(--letra_texto_tamaño);
+    border: none;
+    border-radius: 10px;
+    background: var(--color_boton_login);
+    color: #fae0e4;
+    box-shadow: var(--sombra_botones);
+    text-transform: uppercase;
+}
+
+.botoniniciosesion:hover {
+    background: var(--color_boton_login_hover);
+}
+
+.divBotones {
+    width: 100%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    top: -20em;
+}
+
+@media (min-width: 920px) {
+    .logo {
+        height: 100%;
+        width: 100%;
+        background-image: url(../img/musica.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+
+    }
+
+    .divCentro {
+        height: 50%;
+        width: 50%;
+        background-image: url(../img/let.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        margin-top: -10px;
+        margin-left: 25%;
+        z-index: 3;
+        box-shadow: var(--sombra_botones);
+        border-radius: 30px;
+    }
+
+    .divBotones {
+        flex-direction: row;
+        width: 60%;
+        position: relative;
+        top: 30em;
+    }
+
+    .letraLogo {
+        text-align: right;
+        margin-top: 40px;
+        margin-right: -70%;
+    }
+}
+
+@media (min-width: 1020) {
+    .contenedor_home {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .contenedor_todo {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+
+    .letraLogo {
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+
+        color: white;
+        display: inline-block;
+        font-size: 50px;
+    }
+
+
+    .botonregistro {
+        cursor: pointer;
+        width: var(--ancho_botones);
+        height: var(--alto_botones);
+        font-size: var(--letra_texto_tamaño);
+        border: none;
+        border-radius: 10px;
+        background: var(--color_boton_registro);
+        color: #fae0e4;
+
+        text-transform: uppercase;
+    }
+
+    .botoniniciosesion {
+        cursor: pointer;
+        width: var(--ancho_botones);
+        height: var(--alto_botones);
+        font-size: var(--letra_texto_tamaño);
+        border: none;
+        border-radius: 10px;
+        background: var(--color_boton_login);
+        color: #fae0e4;
+        box-shadow: var(--sombra_botones);
+        text-transform: uppercase;
+    }
+
+    .divBotones {
+        padding-top: 25px;
+        width: 60%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+}

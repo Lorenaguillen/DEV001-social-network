@@ -1,0 +1,216 @@
+.divPadre2 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../img/musica2.jpg);
+  /*background-image: linear-gradient(-225deg, rgba(255, 60, 172, 0.5) 0%, rgba(86, 43, 124) 52%, rgb(43, 134, 197) 100%),url(../img/sinFondo.png);*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /*background-attachment: fixed;
+    background-position: center;*/
+}
+
+.container_login {
+  width: 100%;
+  height: 100%;
+}
+
+.img_container_login {
+  display: none;
+}
+
+.btn_home_login {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  padding-bottom: 10px;
+  background: none;
+  cursor: pointer;
+}
+
+.mensajeBienvenida2 {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.mensajeBienvenida2 h2 {
+  font-weight: 700;
+  font-size: 35px;
+  color: #7400b8;
+  /*-webkit-text-stroke: 0.4px #240046;*/
+
+}
+
+.formulariologin {
+  width: 90%;
+  height: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 15px;
+  border-radius: 15px;
+}
+
+.formulariologin h2 {
+  color: #deabfb;
+  text-align: center;
+  font-weight: 700;
+}
+
+.grupos2 {
+  position: relative;
+  margin: 45px;
+}
+
+.emailLogin,
+.passLogin {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+border-bottom: 1px solid var(--colorTextos);
+}
+
+.emailLogin:focus,
+.passLogin:focus {
+  outline: none;
+  color: #000000;
+}
+
+.labelEmailLogin,
+.labelPassLogin {
+  color: var(--colorTextos_login);
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+.emailLogin:focus~label,
+.emailLogin:valid~label {
+  top: -14px;
+  font-size: 15px;
+  color: #feeafa;
+}
+
+.passLogin:focus~label,
+.passLogin:valid~label {
+  top: -14px;
+  font-size: 15px;
+  color: #feeafa;
+}
+
+.barraLogin {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.barraLogin::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  transition: 0.3s ease width;
+  left: 0;
+}
+
+.emailLogin:focus~.barraLogin::before {
+  width: 100%;
+}
+
+.passLogin:focus~.barraLogin::before {
+  width: 100%;
+}
+
+.btn_form_login {
+  /*background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);*/
+  background: var(--color_boton_login);
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  color: white;
+  height: 40px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn_googleL {
+  border: none;
+  display: block;
+  /*width: 80%;*/
+  margin: 10px auto;
+  height: 40px;
+  background: none;
+}
+
+.imgGoogleL {
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+
+}
+
+@media (min-width: 900px) {
+  .con_form_login {
+    display: flex;
+  }
+
+  .divPadre2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/musica.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+  }
+.imgLogin {
+  height: 100%;
+  width: 50%;
+  background-image: url(../img/login.gif);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 350px;
+  margin-top: 200px;
+  margin-left: 150px;
+}
+  .formulariologin {
+    width: 400px;
+    margin-left: -10px;
+    margin-top: -20px;
+  }
+
+  .img_container_login {
+    display: block;
+    width: 60%;
+    height: 100%;
+    background: #43e97b;
+  }
+
+  .mensajeBienvenida2 h2 {
+    font-size: 50px;
+    -webkit-text-stroke: 0.6px #48bfe3;
+  }
+
+  .btn_home_login {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,132 @@
+  .nosotras {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contenedor {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: var(--margenes) 0;
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+    margin-top: -70px;
+  }
+
+  .contenedor h3 {
+    font-size: var(--titulos);
+    color: var(--color1);
+    margin-bottom: var(--espacios);
+  }
+
+  .content-card h4 {
+    font-size: 20px;
+    color: var(--color1);
+  }
+
+  .contenedor p {
+    font-size: var(--subtitulos);
+    font-weight: 300;
+    color: var(--color1);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 2rem;
+  }
+
+  .content-card {
+    width: 60%;
+    box-shadow: 0 0 6px 0 rgb(170 4 4 / 50%);
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 15px;
+  }
+
+  .content-card img {
+    width: 76%;
+    height: 55%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #f7f0e3;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .texto-team {
+    height: 20%;
+    width: 100%;
+    padding: var(--espacios) 0;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .social-media a {
+    font-size: 20px;
+    display: inline-block;
+    color: #f6d8e7;
+    border: 1px solid #f6d8e7;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+    margin-right: 5px;
+  }
+
+  .social-media a:hover {
+    color: #f6d8e7;
+    background-color: rgba(255, 0, 102);
+    border-color: rgba(255, 0, 102);
+  }
+
+  .btn_home_contacto {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 8px;
+    background: none;
+    cursor: pointer;
+  }
+
+  @media (min-width: 920px) {
+
+    .contenedor {
+      max-width: 1000px;
+      overflow: hidden;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: initial;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .content-card {
+      width: 31%;
+      box-shadow: 0 0 6px 0 rgba(170, 4, 4, 0.5);
+      height: 430px;
+    }
+
+    .texto-team {
+      height: 20%;
+      width: 100%;
+      padding: var(--espacios) 0;
+    }
+  }
