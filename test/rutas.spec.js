@@ -1,5 +1,6 @@
 import { Rutas } from '../src/lib/rutas.js';
-
+ //es una simulacion 
+ 
 jest.mock('../src/__mocks__/main.js');
 describe('test de rutas', () => {
   it('debería ser una función', () => {

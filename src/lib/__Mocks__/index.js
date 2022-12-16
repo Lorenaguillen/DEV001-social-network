@@ -1,4 +1,4 @@
-//  jes nos permite simular esta funcion en register login y google (Mock)
+//  jes nos permite simular esta funcion en register login y google, esto es un (Mock)
 export const formularioregistro = jest.fn((email) => {
   if (email === 'resolve@gmail.com') {
     return Promise.resolve();
@@ -22,14 +22,7 @@ export const formulariologin = jest.fn((email) => {
 export const viewUser = jest.fn(() => ({ user: { displayName: 'camila', photoURL: '', uid: '5550121' } }));
 // eslint-disable-next-line max-len
 export const createPost = jest.fn((post, name, id) => Promise.resolve({ Post: { post, name, id } }));
-// eslint-disable-next-line max-len
-// export const createPost = jest.fn((post, name, id) => {
-//   if (post === 'hola a todos' || name === 'camila' || id === '5550121') {
-//     return Promise.resolve();
-//   }
-//   return '';
-// });
-// jest.fn(); retorna un objeto mock
+// jest.fn(); retorna un objeto tipo mock
 export const formularioGoogle = jest.fn();
 export const onGetTasks = jest.fn();
 export const deleteTasks = jest.fn();

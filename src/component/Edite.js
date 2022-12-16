@@ -6,11 +6,13 @@ import {
 const updateTaskHandler = (id, tt) => {
   updateTask(id, {
     post: tt.value,
+    // tt.value, mira el valor que hay dentro de textarea
   });
 };
 export const EditePost = () => {
   const poste = document.querySelector('.cajapost');
   const editbtn = poste.querySelectorAll('.edit_img');
+  //  foreach esta recorriendo el resultade de QSElector ya que obtenemos varios array
   editbtn.forEach((btn) => {
     btn.addEventListener('mouseup', (e) => {
       const id = e.target.id;
@@ -23,6 +25,7 @@ export const EditePost = () => {
           cartaInd = carta[i];
           console.log(cartaInd);
           const tt = cartaInd.querySelector('.cajaText');
+          // disabled propiedad de css que desactiva
           tt.disabled = false;
           const btnedit = cartaInd.querySelector('.cajaEdit');
           btnedit.style.display = 'block';
@@ -42,7 +45,7 @@ export const EditePost = () => {
     });
   });
 };
-
+// para actualizar el nombre, para cambiar el nombre del post
 export const namePost = (id, name) => {
   updateTask(id, {
     name,

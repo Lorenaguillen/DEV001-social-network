@@ -5,6 +5,7 @@ export class GoogleAuthProvider {
     googleAuthProvider();
   }
 }
+//funciones de firebase
 export const createUserWithEmailAndPassword = jest.fn();
 export const signInWithEmailAndPassword = jest.fn();
 export const onAuthStateChanged = jest.fn();

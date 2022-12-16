@@ -29,7 +29,7 @@ routes = {
   '/contacto': NuestroEquipo(onNavigate),
 
 };
-
+// window.location.pathname lo que hace es agregar el (path /)
 const component = () => routes[window.location.pathname];
 
 window.onpopstate = () => {

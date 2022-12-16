@@ -130,12 +130,13 @@ export const Profile = (onNavigate) => {
         nombre.value = user.displayName;
         imgPerfil.value = user.photoURL;
       }
+      // esto .style.display tambien hace parte del DOM 
     } else {
       modal.style.display = 'none';
       contenedorPerfil.style.display = 'none';
     }
   });
-
+  // relod es para recargar nuestra pagina cuando va al begin
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     updateUser(nombre.value, imgPerfil.value).then(() => {

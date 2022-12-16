@@ -7,3 +7,5 @@ export const Rutas = (rutas) => {
   }
   return sms;
 };
+
+// esto se hizo para guiar la ruta de inicio, para que una se vaya a perfil y la otra a inicio

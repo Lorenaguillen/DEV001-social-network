@@ -25,7 +25,7 @@ export const Begin = (onNavigate) => {
   checkMenu.className = 'checkmenu';
   const imgMenuH = document.createElement('img');
   imgMenuH.className = 'checkMenuIcon';
-  imgMenuH.src = 'https://i.postimg.cc/8P2WmnYN/menu-removebg-preview.png';
+  imgMenuH.src = 'https://i.postimg.cc/8P2WmnYN/menu-removebg-previe<w.png';
   checkMenu.appendChild(imgMenuH);
   iconoMenu.appendChild(checkMenu);
   const imgMenu = document.createElement('span');

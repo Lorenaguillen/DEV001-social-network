@@ -20,6 +20,7 @@ describe('test de begin', () => {
     botonMenu.click();
     expect(menuLateral.style.display).toBe('block');
   });
+  // desactivas cuando le das clic en cerrar
   it('desactivar menu lateral', () => {
     const elemento = Begin();
     const botonMenu = elemento.querySelector('.imgMenu');

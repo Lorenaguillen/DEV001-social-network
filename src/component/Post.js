@@ -12,10 +12,7 @@ const PostHandler = (doc, id, user, name) => {
   cardDiv.className = 'cardCont';
   cardDiv.setAttribute('id', id);
 
-  /* const notas = document.createElement('img');
-  notas.className = 'notas';
-  notas.src = '../assets/img/music-notes.png';
-  cardDiv.appendChild(notas); */
+  /*  */
 
   const cajaPost = document.createElement('div');
   cajaPost.className = 'cajaPost';
@@ -108,6 +105,7 @@ export const Post = () => {
         divPoster.innerHTML = '';
         divPoster.appendChild(contenedorCaja);
         EditePost();
+        // delite elimina la publicacion
         poster.appendChild(Delete());
         likePost(user.uid);
       });
@@ -117,5 +115,6 @@ export const Post = () => {
   });
 
   poster.appendChild(divPoster);
+  // la funcion me debe retornar el div poster
   return poster;
 };

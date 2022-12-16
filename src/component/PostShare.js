@@ -22,14 +22,7 @@ export const Share = () => {
   botonPost.type = 'submit';
   botonPost.textContent = 'Post';
   botonPost.className = 'botonPost';
-
-  // caja Like
-  // const cajaLike = document.createElement('div');
-  // cajaLike.className = 'cajaLike';
-  // const btnLike = document.createElement('button');
-  // btnLike.type = 'submit';
-  // btnLike.className = 'btnLike';
-
+  // 
   sectionBody.appendChild(formPost);
   formPost.appendChild(cajaTexForm);
   cajaTexForm.appendChild(textoPost);
@@ -44,7 +37,7 @@ export const Share = () => {
   viewUser((user) => {
     if (user) {
       if (user !== null) {
-        formPost.addEventListener('submit', async (e) => {
+        formPost.addEventListener('submit', (e) => {
           e.preventDefault();
           const likeus = 0;
           createPost(textoPost.value, user.uid, user.displayName, likeus);

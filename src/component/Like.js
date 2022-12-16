@@ -16,11 +16,14 @@ export const likePost = (user) => {
     likes.addEventListener('mouseup', (e) => {
       const id = e.target.id;
       onGetTask(id).then((res) => {
+        // res.data son las respuesta 
         const post = res.data();
         if (!post.like.includes(user)) {
+          // ... hacer copia y agregar ID del usuario
           const likesNew = [...post.like, user];
           likeHandler(id, likesNew);
         } else {
+          // filtra el array de usuarios
           const filterUs = post.like.filter((elemento) => elemento !== user);
           likeHandler(id, filterUs);
         }

@@ -137,7 +137,7 @@ export const Register = (onNavigate) => {
   botonClose.addEventListener('click', () => {
     modal.style.display = 'none';
   });
-
+// spanpass es nuestro ojito, pasa de passw a tipo texto
   spanPass.addEventListener('click', () => {
     if (pass.type === 'password') {
       pass.type = 'text';
@@ -145,10 +145,10 @@ export const Register = (onNavigate) => {
       pass.type = 'password';
     }
   });
-
+// preventDefault para que no se recargue el formulario
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-
+//
     formularioregistro(email.value, pass.value).then(() => {
       onNavigate(Rutas('registro'));
       form.reset();
